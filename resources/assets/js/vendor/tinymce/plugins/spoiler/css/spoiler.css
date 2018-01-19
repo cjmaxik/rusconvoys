@@ -1,0 +1,46 @@
+.collapsible {
+    border-top:            1px solid #DDD;
+    border-right:          1px solid #DDD;
+    border-left:           1px solid #DDD;
+    -webkit-margin-before: 0;
+    -webkit-margin-after:  0;
+    -webkit-margin-start:  0;
+    -webkit-margin-end:    0;
+    -webkit-padding-start: 0;
+}
+
+.collapsible > li {
+    padding:         0;
+    list-style-type: none;
+}
+
+ul, menu, dir {
+    display:               block;
+    list-style-type:       disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after:  1em;
+    -webkit-margin-start:  0px;
+    -webkit-margin-end:    0px;
+    -webkit-padding-start: 40px;
+}
+
+.collapsible-body {
+    border-bottom:    1px solid #DDD;
+    background-color: white;
+    box-sizing:       border-box;
+    padding:          1rem 2rem;
+}
+
+.collapsible-header {
+    display:          block;
+    cursor:           pointer;
+    min-height:       3rem;
+    line-height:      3rem;
+    padding:          0 1rem;
+    background-color: #FFF;
+    border-bottom:    1px solid #DDD;
+}
+
+.pull-right {
+    float: right;
+}

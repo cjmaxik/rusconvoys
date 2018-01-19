@@ -1,0 +1,266 @@
+//colors
+$black_40: rgba(0, 0, 0, 0.4);
+$white: #FFF;
+$black_16: rgba(0, 0, 0, 0.16);
+$black_12: rgba(0, 0, 0, 0.12);
+$color_beryl_green_approx: #DCEDC8;
+$color_silver_approx: #BDBDBD;
+$color_log_cabin_approx: #212121;
+$color_tapa_approx: #757575;
+$color_gallery_approx: #EEE;
+
+//@extend-elements
+//original selectors
+//.dtp div.dtp-date, .dtp div.dtp-time
+%extend_1 {
+    background: $primary-color;
+    text-align: center;
+    color:      $white;
+    padding:    10px;
+}
+
+//original selectors
+//.dtp table.dtp-picker-days tr >td >a, .dtp .dtp-picker-time >a
+%extend_2 {
+    color:           $color_log_cabin_approx;
+    text-decoration: none;
+    padding:         0.4em 0.5em 0.5em 0.6em;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius:   50% !important;
+}
+
+//original selectors
+//.dtp a.dtp-meridien-am, .dtp a.dtp-meridien-pm
+%extend_3 {
+    position:        relative;
+    top:             10px;
+    color:           $color_log_cabin_approx;
+    font-weight:     500;
+    padding:         0.7em 0.5em;
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius:   50% !important;
+    text-decoration: none;
+    background:      $color_gallery_approx;
+    font-size:       1em;
+}
+
+.dtp {
+    position:    fixed;
+    top:         0;
+    left:        0;
+    right:       0;
+    bottom:      0;
+    background:  $black_40;
+    z-index:     2000;
+    font-size:   14px;
+    //Instead of the line below you could use @include user-select($select)
+    user-select: none;
+    div {
+        &.dtp-date {
+            @extend %extend_1;
+            > div {
+                padding: 0;
+                margin:  0;
+            }
+        }
+        &.dtp-time {
+            @extend %extend_1;
+        }
+        &.dtp-actual-month {
+            font-size: 1.5em;
+        }
+        &.dtp-actual-num {
+            font-size:   3em;
+            line-height: 0.9;
+        }
+        &.dtp-actual-maxtime {
+            font-size:   3em;
+            line-height: 0.9;
+        }
+        &.dtp-actual-year {
+            font-size: 1.5em;
+            color:     $color_beryl_green_approx;
+        }
+        &.dtp-picker {
+            padding:    1em;
+            text-align: center;
+        }
+        &.dtp-picker-month {
+            font-weight:    500;
+            text-align:     center;
+            padding-bottom: 20px !important;
+            text-transform: uppercase !important;
+        }
+        &.dtp-actual-time {
+            font-weight: 500;
+            text-align:  center;
+        }
+    }
+    .dtp-close {
+        position: absolute;
+        top:      0.5em;
+        right:    1em;
+        > a {
+            color: $white;
+            > i {
+                font-size: 1em;
+            }
+        }
+    }
+    .dtp-picker-time {
+        > a {
+            @extend %extend_2;
+        }
+        > {
+            .dtp-select-hour {
+                cursor: pointer;
+            }
+            .dtp-select-minute {
+                cursor: pointer;
+            }
+        }
+    }
+    .p10 {
+        width:   10%;
+        display: inline-block;
+        > a {
+            color:           $primary-color-dark;
+            text-decoration: none;
+        }
+    }
+    .p20 {
+        width:   20%;
+        display: inline-block;
+    }
+    .p60 {
+        width:   60%;
+        display: inline-block;
+    }
+    .p80 {
+        width:   80%;
+        display: inline-block;
+    }
+    a {
+        &.dtp-meridien-am {
+            @extend %extend_3;
+        }
+        &.dtp-meridien-pm {
+            @extend %extend_3;
+        }
+    }
+    .dtp-buttons {
+        padding:    0 1em 1em;
+        text-align: right;
+
+        button {
+            @extend .btn-primary;
+            @extend .btn-sm;
+        }
+    }
+    &.hidden {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    .invisible {
+        visibility: hidden;
+    }
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    .clearfix {
+        clear: both;
+    }
+    .center {
+        text-align: center;
+    }
+    > .dtp-content {
+        background: $white;
+        max-width:  300px;
+        //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 2px 5px 0 $black_16, 0 2px 10px 0 $black_12;
+        max-height: 520px;
+        position:   relative;
+        left:       50%;
+        > .dtp-date-view > header.dtp-header {
+            background: $primary-color-dark;
+            color:      $white;
+            text-align: center;
+            padding:    0.3em;
+        }
+    }
+    table.dtp-picker-days {
+        margin:     0;
+        min-height: 251px;
+        border:     none;
+        tr {
+            border: none;
+            > td {
+                border:      none;
+                font-weight: 700;
+                font-size:   0.8em;
+                text-align:  center;
+                padding:     0.5em 0.3em;
+                > a {
+                    @extend %extend_2;
+                    &.selected {
+                        background: $primary-color;
+                        color:      $white;
+                    }
+                }
+                > span.dtp-select-day {
+                    color:   $color_silver_approx !important;
+                    padding: 0.4em 0.5em 0.5em 0.6em;
+                }
+            }
+            > th {
+                color:       $color_tapa_approx;
+                text-align:  center;
+                font-weight: 700;
+                padding:     0.4em 0.3em;
+            }
+        }
+    }
+    .dtp-actual-meridien a.selected {
+        background: $primary-color-dark;
+        color:      $white;
+    }
+}
+
+.dtp-picker-year {
+    margin-bottom: 1px;
+}
+
+.year-picker-item {
+    text-align:  center;
+    padding-top: 5px;
+    font-size:   large;
+    cursor:      pointer;
+    margin:      0 auto;
+    &:hover {
+        color: $primary-color-dark;
+    }
+    &.active {
+        color:       $primary-color-dark;
+        font-weight: bold;
+    }
+}
+
+.dtp-actual-year {
+    &:hover {
+        cursor: pointer;
+    }
+    &.disabled:hover {
+        cursor: inherit;
+    }
+}
+
+.dtp-select-year-range {
+    display:    inline-block;
+    text-align: center;
+    width:      100%;
+}

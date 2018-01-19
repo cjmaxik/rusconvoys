@@ -1,0 +1,35 @@
+rusconvoys.ru {
+    redir 301 {
+        if {>X-Forwarded-Proto} is http
+        /  https://{host}{uri}
+    }
+
+    root /var/www/public
+    fastcgi / php-fpm:9000 php {
+        index index.php
+    }
+
+    rewrite {
+        r .*
+        ext /
+        to /index.php?{query}
+    }
+
+    gzip {
+        level 5
+    }
+
+    log /var/log/caddy/access.log {
+        rotate_size 100
+        rotate_age 14
+        rotate_keep 10
+    }
+
+    errors /var/log/caddy/error.log {
+        rotate_size 100
+        rotate_age 14
+        rotate_keep 10
+    }
+
+    tls email@email.com
+}

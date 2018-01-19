@@ -1,0 +1,847 @@
+[
+  {
+    "id": 1,
+    "name": "Euro Truck Simulator 2",
+    "shortname": "ETS2",
+    "countries": [
+      {
+        "name": "Austria",
+        "cities": [
+          {
+            "name": "Graz",
+            "dlc": "base"
+          },
+          {
+            "name": "Innsbruck",
+            "dlc": "base"
+          },
+          {
+            "name": "Klagenfurt am Wörthersee",
+            "dlc": "base"
+          },
+          {
+            "name": "Linz",
+            "dlc": "base"
+          },
+          {
+            "name": "Salzburg",
+            "dlc": "base"
+          },
+          {
+            "name": "Wien",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Belgium",
+        "cities": [
+          {
+            "name": "Brussel",
+            "dlc": "base"
+          },
+          {
+            "name": "Liège",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Czechia",
+        "cities": [
+          {
+            "name": "Brno",
+            "dlc": "base"
+          },
+          {
+            "name": "Ostrava",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Praha",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Denmark",
+        "cities": [
+          {
+            "name": "Aalborg",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Esbjerg",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Frederikshavn",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Gedser",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Hirtshals",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "København",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Odense",
+            "dlc": "dlc_north"
+          }
+        ]
+      },
+      {
+        "name": "France",
+        "cities": [
+          {
+            "name": "Saint-Alban-du-Rhône",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Bordeaux",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Bourges",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Brest",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Calais",
+            "dlc": "base"
+          },
+          {
+            "name": "Civaux",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Clermont-Ferrand",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Dijon",
+            "dlc": "base"
+          },
+          {
+            "name": "Golfech",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "La Rochelle",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Saint-Laurent",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Le Havre",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Le Mans",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Lille",
+            "dlc": "base"
+          },
+          {
+            "name": "Limoges",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Lyon",
+            "dlc": "base"
+          },
+          {
+            "name": "Marseille",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Metz",
+            "dlc": "base"
+          },
+          {
+            "name": "Montpellier",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Nantes",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Nice",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Paluel",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Paris",
+            "dlc": "base"
+          },
+          {
+            "name": "Reims",
+            "dlc": "base"
+          },
+          {
+            "name": "Rennes",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Roscoff",
+            "dlc": "dlc_fr"
+          },
+          {
+            "name": "Strasbourg",
+            "dlc": "base"
+          },
+          {
+            "name": "Toulouse",
+            "dlc": "dlc_fr"
+          }
+        ]
+      },
+      {
+        "name": "Germany",
+        "cities": [
+          {
+            "name": "Berlin",
+            "dlc": "base"
+          },
+          {
+            "name": "Bremen",
+            "dlc": "base"
+          },
+          {
+            "name": "Dortmund",
+            "dlc": "base"
+          },
+          {
+            "name": "Dresden",
+            "dlc": "base"
+          },
+          {
+            "name": "Duisburg",
+            "dlc": "base"
+          },
+          {
+            "name": "Düsseldorf",
+            "dlc": "base"
+          },
+          {
+            "name": "Erfurt",
+            "dlc": "base"
+          },
+          {
+            "name": "Frankfurt am Main",
+            "dlc": "base"
+          },
+          {
+            "name": "Hamburg",
+            "dlc": "base"
+          },
+          {
+            "name": "Hannover",
+            "dlc": "base"
+          },
+          {
+            "name": "Kassel",
+            "dlc": "base"
+          },
+          {
+            "name": "Kiel",
+            "dlc": "base"
+          },
+          {
+            "name": "Köln",
+            "dlc": "base"
+          },
+          {
+            "name": "Leipzig",
+            "dlc": "base"
+          },
+          {
+            "name": "Magdeburg",
+            "dlc": "base"
+          },
+          {
+            "name": "Mannheim",
+            "dlc": "base"
+          },
+          {
+            "name": "München",
+            "dlc": "base"
+          },
+          {
+            "name": "Nürnberg",
+            "dlc": "base"
+          },
+          {
+            "name": "Osnabrück",
+            "dlc": "base"
+          },
+          {
+            "name": "Rostock",
+            "dlc": "base"
+          },
+          {
+            "name": "Stuttgart",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Hungary",
+        "cities": [
+          {
+            "name": "Budapest",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Debrecen",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Szeged",
+            "dlc": "dlc_east"
+          }
+        ]
+      },
+      {
+        "name": "Italy",
+        "cities": [
+          {
+            "name": "Milano",
+            "dlc": "base"
+          },
+          {
+            "name": "Torino",
+            "dlc": "base"
+          },
+          {
+            "name": "Venezia",
+            "dlc": "base"
+          },
+          {
+            "name": "Verona",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Luxembourg",
+        "cities": [
+          {
+            "name": "Luxembourg",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Netherlands",
+        "cities": [
+          {
+            "name": "Amsterdam",
+            "dlc": "base"
+          },
+          {
+            "name": "Europoort",
+            "dlc": "base"
+          },
+          {
+            "name": "Groningen",
+            "dlc": "base"
+          },
+          {
+            "name": "IJmuiden",
+            "dlc": "base"
+          },
+          {
+            "name": "Rotterdam",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Norway",
+        "cities": [
+          {
+            "name": "Bergen",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Kristiansand",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Oslo",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Stavanger",
+            "dlc": "dlc_north"
+          }
+        ]
+      },
+      {
+        "name": "Poland",
+        "cities": [
+          {
+            "name": "Białystok",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Gdańsk",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Gdynia",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Katowice",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Kraków",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Łódź",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Lublin",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Olsztyn",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Poznań",
+            "dlc": "base"
+          },
+          {
+            "name": "Szczecin",
+            "dlc": "base"
+          },
+          {
+            "name": "Warszawa",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Wrocław",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Slovakia",
+        "cities": [
+          {
+            "name": "Bratislava",
+            "dlc": "base"
+          },
+          {
+            "name": "Banská Bystrica",
+            "dlc": "dlc_east"
+          },
+          {
+            "name": "Košice",
+            "dlc": "dlc_east"
+          }
+        ]
+      },
+      {
+        "name": "Sweden",
+        "cities": [
+          {
+            "name": "Göteborg",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Helsingborg",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Jönköping",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Kalmar",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Karlskrona",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Linköping",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Malmö",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Nynäshamn",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Örebro",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Södertälje",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Stockholm",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Trelleborg",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Uppsala",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Västerås",
+            "dlc": "dlc_north"
+          },
+          {
+            "name": "Växjö",
+            "dlc": "dlc_north"
+          }
+        ]
+      },
+      {
+        "name": "Switzerland",
+        "cities": [
+          {
+            "name": "Bern",
+            "dlc": "base"
+          },
+          {
+            "name": "Genève",
+            "dlc": "base"
+          },
+          {
+            "name": "Zürich",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "United Kingdom",
+        "cities": [
+          {
+            "name": "Aberdeen",
+            "dlc": "base"
+          },
+          {
+            "name": "Birmingham",
+            "dlc": "base"
+          },
+          {
+            "name": "Cambridge",
+            "dlc": "base"
+          },
+          {
+            "name": "Cardiff",
+            "dlc": "base"
+          },
+          {
+            "name": "Carlisle",
+            "dlc": "base"
+          },
+          {
+            "name": "Dover",
+            "dlc": "base"
+          },
+          {
+            "name": "Edinburgh",
+            "dlc": "base"
+          },
+          {
+            "name": "Felixstowe",
+            "dlc": "base"
+          },
+          {
+            "name": "Glasgow",
+            "dlc": "base"
+          },
+          {
+            "name": "Grimsby",
+            "dlc": "base"
+          },
+          {
+            "name": "Harwich",
+            "dlc": "base"
+          },
+          {
+            "name": "Hull",
+            "dlc": "base"
+          },
+          {
+            "name": "Liverpool",
+            "dlc": "base"
+          },
+          {
+            "name": "London",
+            "dlc": "base"
+          },
+          {
+            "name": "Manchester",
+            "dlc": "base"
+          },
+          {
+            "name": "Newcastle-upon-Tyne",
+            "dlc": "base"
+          },
+          {
+            "name": "Plymouth",
+            "dlc": "base"
+          },
+          {
+            "name": "Sheffield",
+            "dlc": "base"
+          },
+          {
+            "name": "Southampton",
+            "dlc": "base"
+          },
+          {
+            "name": "Swansea",
+            "dlc": "base"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "American Truck Simulator",
+    "shortname": "ATS",
+    "countries": [
+      {
+        "name": "Arizona",
+        "cities": [
+          {
+            "name": "Camp Verde",
+            "dlc": "base"
+          },
+          {
+            "name": "Ehrenberg",
+            "dlc": "base"
+          },
+          {
+            "name": "Flagstaff",
+            "dlc": "base"
+          },
+          {
+            "name": "Grand Canyon Village",
+            "dlc": "base"
+          },
+          {
+            "name": "Holbrook",
+            "dlc": "base"
+          },
+          {
+            "name": "Kayenta",
+            "dlc": "base"
+          },
+          {
+            "name": "Kingman",
+            "dlc": "base"
+          },
+          {
+            "name": "Nogales",
+            "dlc": "base"
+          },
+          {
+            "name": "Page",
+            "dlc": "base"
+          },
+          {
+            "name": "Phoenix",
+            "dlc": "base"
+          },
+          {
+            "name": "San Simon",
+            "dlc": "base"
+          },
+          {
+            "name": "Show Low",
+            "dlc": "base"
+          },
+          {
+            "name": "Sierra Vista",
+            "dlc": "base"
+          },
+          {
+            "name": "Tucson",
+            "dlc": "base"
+          },
+          {
+            "name": "Yuma",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "California",
+        "cities": [
+          {
+            "name": "Bakersfield",
+            "dlc": "base"
+          },
+          {
+            "name": "Barstow",
+            "dlc": "base"
+          },
+          {
+            "name": "Carlsbad",
+            "dlc": "base"
+          },
+          {
+            "name": "El Centro",
+            "dlc": "base"
+          },
+          {
+            "name": "Eureka",
+            "dlc": "base"
+          },
+          {
+            "name": "Fresno",
+            "dlc": "base"
+          },
+          {
+            "name": "Hornbrook",
+            "dlc": "base"
+          },
+          {
+            "name": "Huron",
+            "dlc": "base"
+          },
+          {
+            "name": "Los Angeles",
+            "dlc": "base"
+          },
+          {
+            "name": "Oakdale",
+            "dlc": "base"
+          },
+          {
+            "name": "Oakland",
+            "dlc": "base"
+          },
+          {
+            "name": "Oxnard",
+            "dlc": "base"
+          },
+          {
+            "name": "Redding",
+            "dlc": "base"
+          },
+          {
+            "name": "Sacramento",
+            "dlc": "base"
+          },
+          {
+            "name": "San Diego",
+            "dlc": "base"
+          },
+          {
+            "name": "San Francisco",
+            "dlc": "base"
+          },
+          {
+            "name": "San Rafael",
+            "dlc": "base"
+          },
+          {
+            "name": "Santa Cruz",
+            "dlc": "base"
+          },
+          {
+            "name": "Santa Maria",
+            "dlc": "base"
+          },
+          {
+            "name": "Stockton",
+            "dlc": "base"
+          },
+          {
+            "name": "Truckee",
+            "dlc": "base"
+          },
+          {
+            "name": "Ukiah",
+            "dlc": "base"
+          }
+        ]
+      },
+      {
+        "name": "Nevada",
+        "cities": [
+          {
+            "name": "Carson City",
+            "dlc": "base"
+          },
+          {
+            "name": "Elko",
+            "dlc": "base"
+          },
+          {
+            "name": "Ely",
+            "dlc": "base"
+          },
+          {
+            "name": "Jackpot",
+            "dlc": "base"
+          },
+          {
+            "name": "Las Vegas",
+            "dlc": "base"
+          },
+          {
+            "name": "Pioche",
+            "dlc": "base"
+          },
+          {
+            "name": "Primm",
+            "dlc": "base"
+          },
+          {
+            "name": "Reno",
+            "dlc": "base"
+          },
+          {
+            "name": "Tonopah",
+            "dlc": "base"
+          },
+          {
+            "name": "Winnemucca",
+            "dlc": "base"
+          }
+        ]
+      }
+    ]
+  }
+]

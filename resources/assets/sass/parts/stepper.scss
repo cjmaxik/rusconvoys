@@ -1,0 +1,14 @@
+div.stepper {
+    div.step {
+        color: darken(#FFF, 50%) !important;
+        padding: 0.25em 0 0.25em 0;
+
+        &.done {
+            color: darken(#FFF, 70%) !important;
+        }
+
+        &.active {
+            padding: 0;
+        }
+    }
+}

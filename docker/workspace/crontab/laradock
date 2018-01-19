@@ -1,0 +1,2 @@
+* * * * * laradock php /var/www/artisan schedule:run >> /var/log/cron/cron.log 2>&1
+0 5 * * * laradock php /var/www/artisan queue:restart >> /var/log/cron/cron.log 2>&1

@@ -1,0 +1,124 @@
+version: '2'
+
+services:
+
+### Applications Code Container #############################
+
+    applications:
+        image: tianon/true
+        volumes:
+            - ../:/var/www/
+
+### Workspace Utilities Container ###########################
+
+    workspace:
+        build:
+            context: ./workspace
+            args:
+                - INSTALL_XDEBUG=true
+                - INSTALL_NODE=true # changed
+                - NODE_VERSION=7.9
+                - COMPOSER_GLOBAL_INSTALL=true # changed
+                - INSTALL_WORKSPACE_SSH=false
+                - PUID=1000
+                - PGID=1000
+                - TZ=UTC
+        volumes_from:
+            - applications
+        ports:
+            - "3000:3000"
+            - "3001:3001"
+        volumes:
+            - ./logs/cron:/var/log/cron
+        extra_hosts:
+            # IMPORTANT: Replace with your Docker Host IP (will be appended to /etc/hosts)
+            - "dockerhost:10.0.75.1"
+        tty: true
+        stdin_open: true
+        restart: always
+
+### PHP-FPM and Worker Containers ############################
+
+    php-fpm:
+        build:
+            context: ./php-fpm
+            args:
+                - INSTALL_XDEBUG=true
+                - INSTALL_BCMATH=true # changed
+                - INSTALL_PHPREDIS=true # changed
+                - INSTALL_OPCACHE=false
+                - INTL=true
+        volumes_from:
+            - applications
+        expose:
+            - "9000"
+        depends_on:
+            - workspace
+        extra_hosts:
+            # IMPORTANT: Replace with your Docker Host IP (will be appended to /etc/hosts)
+            - "dockerhost:10.0.75.1"
+        environment:
+            # IMPORTANT: Set the Remote Interpreter entry matching name to `laravel`
+            - PHP_IDE_CONFIG=serverName=laravel
+        restart: always
+
+    php-worker:
+        build:
+            context: ./php-worker
+        volumes_from:
+            - applications
+        depends_on:
+            - workspace
+
+### MySQL Container #########################################
+
+    mysql:
+        build:
+            context: ./mysql
+        volumes:
+            - ./data/mysql/:/var/lib/mysql
+        ports:
+            - "3306:3306"
+        restart: always
+
+### Redis Container #########################################
+
+    redis:
+        build: ./redis
+        volumes:
+            - redis:/data
+        ports:
+            - "6379:6379"
+        restart: always
+
+### Caddy Server Container ##################################
+
+    caddy:
+        build: ./caddy
+        ports:
+            - "80:80"
+            - "443:443"
+            - "2015:2015"
+        volumes_from:
+            - applications
+        volumes:
+            - ./caddy/Caddyfile:/etc/Caddyfile
+            - ./logs/caddy:/var/log/caddy
+            - caddy:/root/.caddy
+        depends_on:
+            - php-fpm
+        restart: always
+
+### Volumes Setup ###########################################
+
+volumes:
+    mysql:
+        driver: "local"
+    redis:
+        driver: "local"
+    caddy:
+        driver: "local"
+    php-worker:
+        driver: "local"
+    sessions:    ## nothing is connected to this (- ./data/sessions:/sessions)
+        driver: "local"

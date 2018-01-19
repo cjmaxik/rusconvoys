@@ -1,0 +1,36 @@
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content }
+    &:-moz-placeholder { @content }
+    &::-moz-placeholder { @content }
+    &:-ms-input-placeholder { @content }
+}
+
+.mdb-color,
+.red,
+.pink,
+.purple,
+.deep-purple,
+.indigo,
+.blue,
+.cyan,
+.teal,
+.green,
+.deep-orange,
+.brown,
+.blue-grey,
+.light-blue {
+    &.tag-color-input {
+        color: $white !important;
+
+        @include placeholder {
+            color: darken($white, 20%) !important;
+        }
+    }
+}
+
+// Placeholder changes
+.tag-color-input {
+    @include placeholder {
+        font-weight: 100;
+    }
+}

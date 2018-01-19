@@ -1,0 +1,14 @@
+/node_modules
+/storage/*.key
+/vendor
+/.idea
+.env
+convoys.sublime-project
+convoys.sublime-workspace
+/.phpintel
+/public/storage
+/public/tinymce
+_ide_helper.php
+/auth.json
+/_ide_helper_models.php
+/.phpstorm.meta.php

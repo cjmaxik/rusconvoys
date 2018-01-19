@@ -1,0 +1,57 @@
+span.role {
+    span.badge {
+        //margin-right: 1px;
+    }
+
+    &.role-admin .role-nickname {
+        color:       $danger-color-dark;
+        text-shadow: $rgba-red-strong 0.05em 0.05em 0.2em;
+        font-weight: bold;
+    }
+
+    &.role-moderator .role-nickname {
+        color:       $warning-color-dark;
+        text-shadow: $rgba-orange-strong 0.05em 0.05em 0.2em;
+        font-weight: bold;
+    }
+
+    &.role-user .role-nickname {
+        color: inherit;
+        // text-shadow: black 0.05em 0.05em 0.2em;
+    }
+
+    &.role-tester .role-nickname {
+        color:       $success-color;
+        text-shadow: $rgba-green-strong 0.05em 0.05em 0.2em;
+        font-style:  bold;
+    }
+
+    &.role-donator .role-nickname {
+        color:       $primary-color;
+        text-shadow: $rgba-blue-strong 0.05em 0.05em 0.2em;
+        font-style:  bold;
+    }
+
+    &.role-banned .role-nickname {
+        color:           gray;
+        text-decoration: line-through;
+    }
+
+    small.role-name {
+        font-size: 50%;
+    }
+
+    .role-badge {
+        margin-right: 5px;
+
+        @media (max-width: 480px) {
+            font-size: 50%;
+        }
+    }
+
+    .role-rating {
+        vertical-align: super;
+        // margin-left: 5px;
+        font-size:      75%;
+    }
+}

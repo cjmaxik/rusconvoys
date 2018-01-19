@@ -1,0 +1,460 @@
+.lazy {
+    &.loading {
+        background-image: url(/pics/loader.gif);
+    }
+
+    &.card-img-top {
+        display: block;
+        margin:  0 auto;
+    }
+}
+
+img.bg {
+    /* Set rules to fill background */
+    min-height:          100%;
+    min-width:           1024px;
+
+    /* Set up proportionate scaling */
+    width:               100%;
+    height:              auto;
+
+    /* Set up positioning */
+    position:            fixed;
+    top:                 0;
+    left:                0;
+
+    /* Other */
+    background-size:     cover;
+    background-position: center;
+    background-repeat:   no-repeat;
+    opacity:             0.5;
+    filter:              blur(10px);
+    z-index:             -1;
+}
+
+@media screen and (max-width: 1024px) {
+    img.bg {
+        left:        50%;
+        margin-left: -512px;
+    }
+}
+
+.custom-jumbotron {
+    background-color:           rgba(0, 0, 0, 0.5);
+    margin-bottom:              0;
+    // padding: 5px 15px 25px 15px;
+    border-bottom-left-radius:  0px;
+    border-bottom-right-radius: 0px;
+
+    p {
+        font-size: 130%;
+    }
+
+    &.no-background {
+        background-color: transparent;
+        box-shadow:       none;
+    }
+}
+
+.after-jumbotron {
+    border-top-left-radius:  0px;
+    border-top-right-radius: 0px;
+}
+
+body {
+    background-color: $elegant-color-dark;
+
+    &.fixed {
+        padding-top: 70px;
+    }
+
+    &.white {
+        background-color: #FFF !important;
+    }
+
+    //&.with-background {
+    //    background-color: #000;
+    //
+    //    &.background-danger {
+    //        background: darken($badge-warning-bg, 80%)
+    //    }
+    //
+    //    &.background-warning {
+    //        background: darken($badge-danger-bg, 80%)
+    //    }
+    //
+    //    .card:not[class="z-depth-*"] .img-thumbnail {
+    //        box-shadow: 5px 5px 13px 0px rgba(0, 0, 0, 0.5);
+    //    }
+    //}
+}
+
+.card {
+    &.card-secondary, &.card-default {
+        .card-header {
+            text-shadow: none !important;
+        }
+    }
+
+    .card-header {
+        text-shadow: black 0.05em 0.05em 0.2em;
+
+        &.bg-default {
+            color:       $body-color !important;
+            text-shadow: none !important;
+        }
+    }
+
+    .bg-deleted {
+        p {
+            font-size: 80%;
+        }
+    }
+
+    .card-img {
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+}
+
+hr.small {
+    margin-top:    0.3rem;
+    margin-bottom: 0.1rem;
+
+    &.equal {
+        margin-top:    0.3rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
+input {
+    &.form-control[disabled] {
+        background-color: #EEE;
+    }
+}
+
+h1 {
+    span.badge {
+        font-size:      50%;
+        vertical-align: middle;
+    }
+}
+
+span.title {
+    .fa-star {
+        &:hover {
+            color:      orange;
+            transition: color ease-in-out .15s;
+        }
+    }
+
+    input {
+        text-align: center;
+    }
+}
+
+.text-white {
+    h1, h2, h3, h4, h5, p, a, input {
+        color:       #FFF;
+        text-shadow: black 0.05em 0.05em 0.2em;
+    }
+
+    span.badge {
+        text-shadow: none;
+    }
+
+    a {
+        text-decoration: none;
+        &:hover, &:focus {
+            color: $primary-color;
+        }
+    }
+}
+
+.btn {
+    text-transform: none;
+}
+
+.btn-uppercase {
+    text-transform: uppercase;
+}
+
+select#badge_color {
+    text-align:      center;
+    font-weight:     bold;
+    width:           36px;
+    height:          100%;
+    border:          none;
+    appearance:      none;
+    background-size: 13px;
+    background:      url(/public/pics/caret.png) no-repeat center center;
+
+    option.badge {
+        font-size: 150%;
+    }
+
+}
+
+.form-control {
+    padding: 10px !important;
+    width:   inherit;
+
+    &[placeholder] {
+        text-overflow: ellipsis;
+    }
+
+    &#badge {
+        color:      #FFF;
+        margin-top: 0;
+        border:     none;
+
+        &:focus {
+            box-shadow:   none;
+            border-color: transparent;
+        }
+    }
+}
+
+span.badge-color-div {
+    padding: 0;
+    border:  none;
+}
+
+.date-tooltip {
+    cursor:        help;
+    border-bottom: 1px dotted #777;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .equal {
+        div[class*='col-'] {
+            flex:    0 0 100%;
+            display: flex;
+        }
+    }
+
+    .card {
+        flex: 1 0 100%;
+    }
+}
+
+span.badge-full {
+    font-size: 100%;
+}
+
+.col-form-label {
+    font-weight: bold;
+}
+
+.datetimepicker {
+    width: 100% !important;
+}
+
+.info-list {
+    &.card-block {
+        padding: 0;
+    }
+
+    div[class*='col-'] {
+        padding: 0;
+    }
+
+    .list-group {
+        box-shadow: none;
+    }
+}
+
+.media.comment {
+    img.rounded-circle {
+        width:         100px;
+        height:        100px;
+        border-radius: 50%;
+
+        image-rendering: -o-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: optimize-contrast;
+        -ms-interpolation-mode: nearest-neighbor;
+    }
+
+    margin-top:    1rem;
+    margin-bottom: 1rem;
+}
+
+.inline {
+    display: block;
+}
+
+label {
+    font-size: 1rem;
+}
+
+input {
+    box-sizing: inherit !important;
+}
+
+.mce-tinymce {
+    width: 100% !important;
+}
+
+table.table {
+    border-radius: 2px;
+}
+
+th {
+    text-align: center;
+}
+
+.form-control-feedback {
+    text-align: center !important;
+    width:      100%;
+}
+
+div.admin-buttons {
+    padding-top: 20px;
+}
+
+div.tag-color-group {
+    border-bottom: 1px solid $input-border-color;
+}
+
+span.tag-color-select {
+    padding: 0;
+    width:   50px;
+
+    select {
+        transition: background-color ease-in-out .15s, color ease-in-out .15s;
+        height:     100%;
+        border:     none;
+    }
+}
+
+input.tag-color-input {
+    margin-top:    0;
+    margin-bottom: 0;
+    border:        none;
+    font-weight:   bold;
+
+    &:focus {
+        border-bottom: none !important;
+        box-shadow:    none !important;
+    }
+}
+
+a.login-button {
+    border-radius: 2px;
+}
+
+.md-form label.lower.active {
+    transform: translateY(-70%);
+}
+
+a.dropdown-item.notification {
+    padding: .1rem;
+}
+
+.dropdown-toggle.notification::after {
+    content: none;
+}
+
+.fa.fa-6 {
+    font-size: 20em;
+}
+
+.tab-content > .tab-pane {
+    margin-bottom:              25px;
+    border:                     1px solid transparent;
+    border-color:               #FFF #DDD #DDD #DDD;
+    border-bottom-left-radius:  2px;
+    border-bottom-right-radius: 2px;
+
+    div.content {
+        margin: 25px 10px 15px 10px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    div.flex-cards {
+        display: flex;
+    }
+}
+
+div.convoy-card {
+    @extend .hoverable;
+    width: 100%;
+
+    div.card-block {
+        display:     flex;
+        align-items: center;
+        text-align:  center !important;
+
+        h4.card-title {
+            width:         100%;
+            margin-bottom: 0;
+
+            a {
+                display:         block;
+                width:           100%;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .card-footer.convoy-description {
+        font-size:        1rem;
+        background-color: white;
+    }
+
+    //noinspection ALL
+    .card-img {
+        @extend .hoverable;
+        min-height:          150px;
+        width:               auto;
+        transform:           scale(1.005);
+        transition:          all .45s;
+        background-size:     cover;
+        background-repeat:   no-repeat;
+        background-position: center;
+
+        img.card-img-top {
+            position:  relative;
+            top:       50%;
+            transform: translateY(-50%);
+        }
+
+        &:hover {
+            transform:  scale(1.03);
+            transition: all .45s;
+        }
+    }
+}
+
+div.convoy-description, div.faq {
+    ol, ul, li {
+        list-style-type: inherit;
+    }
+
+    ol, ul, menu, dir {
+        display:               block;
+        list-style-type:       inherit;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after:  1em;
+        -webkit-margin-start:  0px;
+        -webkit-margin-end:    0px;
+        -webkit-padding-start: 40px;
+    }
+}
+
+@include navbar-gradient(danger, $danger-color-dark)
+@include navbar-gradient(warning, $warning-color-dark)
+@include navbar-gradient(success, $success-color-dark)
+@include navbar-gradient(info, $info-color-dark)
+@include navbar-gradient(default, $default-color-dark)
+@include navbar-gradient(primary, $primary-color-dark)
+
+@include navbar-gradient(brand, $warning-color-dark)

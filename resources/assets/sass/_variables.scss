@@ -1,0 +1,86 @@
+body {
+    -webkit-font-smoothing:  antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+    .card-footer {
+        padding:          0.75rem 1.25rem;
+        background-color: #F5F5F5;
+        border-top:       1px solid rgba(0, 0, 0, 0.125);
+    }
+}
+
+.dropdown-menu .dropdown-item:active {
+    @extend .brand-gradient;
+    transition: background-color ease-in-out .15s, color ease-in-out .15s;
+}
+
+.badge-normal {
+    font-weight: normal !important;
+}
+
+.bg-dark-brand {
+    background-color: #000;
+}
+
+.blue-gradient {
+    background: #000; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #000 0%, $primary-color 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #000 0%, $primary-color 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #000 0%, $primary-color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='$primary-color', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin navbar-gradient($name, $color) {
+    .#{$name}-gradient {
+        background: $color; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #000 0%, $color 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #000 0%, $color 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #000 0%, $color 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='$color', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    }
+
+    .#{$name}-gradient-rev {
+        background: $color; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, $color 0%, #000 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, $color 0%, #000 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, $color 0%, #000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter:     progid:DXImageTransform.Microsoft.gradient(startColorstr='$color', endColorstr='#000000', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    }
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+// Colors
+// Contextual variations (linked tags get darker on :hover).
+
+.tag-default {
+    @include badge-variant($badge-default-bg);
+}
+
+.tag-primary {
+    @include badge-variant($badge-primary-bg);
+}
+
+.tag-success {
+    @include badge-variant($badge-success-bg);
+}
+
+.tag-info {
+    @include badge-variant($badge-info-bg);
+}
+
+.tag-warning {
+    @include badge-variant($badge-warning-bg);
+}
+
+.tag-danger {
+    @include badge-variant($badge-danger-bg);
+}
+
+// .navbar-brand {
+// 	// align-self: flex-start;
+// }

@@ -1,0 +1,43 @@
+/*!
+ * Material Design for Bootstrap 4
+ * Version: MDB FREE 4.3.1
+ *
+ *
+ * Copyright: Material Design for Bootstrap
+ * http://mdbootstrap.com/
+ *
+ * Read the license: http://mdbootstrap.com/license/
+ *
+ * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
+ *
+ */
+
+@charset "UTF-8";
+
+// MDB Framework //
+
+// Mixins
+@import "node_modules/mdbootstrap/sass/mdb/free/data/prefixer";
+@import "node_modules/mdbootstrap/sass/mdb/free/data/mixins";
+
+// Variables
+@import "node_modules/mdbootstrap/sass/mdb/free/data/colors";
+@import "node_modules/mdbootstrap/sass/mdb/free/data/variables-b4";
+@import "node_modules/mdbootstrap/sass/mdb/free/data/variables";
+
+//Global
+@import "node_modules/mdbootstrap/sass/mdb/free/global";
+
+// MDB Free
+//@import "node_modules/mdbootstrap/sass/mdb/free/roboto";
+@import "node_modules/mdbootstrap/sass/mdb/free/typography";
+@import "node_modules/mdbootstrap/sass/mdb/free/animations";
+@import "node_modules/mdbootstrap/sass/mdb/free/waves";
+@import "node_modules/mdbootstrap/sass/mdb/free/helpers";
+@import "node_modules/mdbootstrap/sass/mdb/free/buttons";
+@import "node_modules/mdbootstrap/sass/mdb/free/forms-basic";
+@import "node_modules/mdbootstrap/sass/mdb/free/cards-basic";
+@import "node_modules/mdbootstrap/sass/mdb/free/navbars";
+@import "node_modules/mdbootstrap/sass/mdb/free/hover-effects";
+@import "node_modules/mdbootstrap/sass/mdb/free/footer";
+@import "node_modules/mdbootstrap/sass/mdb/free/carousels-basic";
