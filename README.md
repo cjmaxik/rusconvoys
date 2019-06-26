@@ -10,7 +10,7 @@ This is the discontinued convoys project for Russian-speaking audience of Trucke
 I can't find any screenshots from production, so this is some development previews:
 ![Imgur](https://pp.userapi.com/c837631/v837631687/26940/H06qhtf9Rp8.jpg)
 ![Imgur](https://i.imgur.com/UU0GHPO.png)
-![Imgur](https://i.imgur.com/6LH3wJ8.png)
+![Imgur](https://i.imgur.com/WTw9Chz.png)
 ![Imgur](https://pp.userapi.com/c639624/v639624687/3d7a/Yjcb54n-800.jpg)
 ![Imgur](https://i.imgur.com/XmDOI1F.png)
 ![Imgur](https://i.imgur.com/YFzzrZS.png)
